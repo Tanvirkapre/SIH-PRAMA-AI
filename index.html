@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRAMA-AI — Intelligent Document Verification and Validation Wizard</title>
+<meta name="description" content="PRAMA-AI: structured extraction, rule-based validation and human review for documents such as AICTE approval letters. Demo mode.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo" viewBox="0 0 32 32"><path d="M16 2l11 4v9c0 7-4.5 12-11 15C9.500 27 5 22 5 15V6z" fill="#22D3EE"/><path d="M11 10h7l3 3v8H11z" fill="#0B1220"/><path d="M13 17l2 2 4-4" stroke="#22D3EE" stroke-width="1.800" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<a class="skip" href="#workspace">Skip to workspace</a>
+<header class="nav" id="top">
+ <div class="wrap nav-in">
+  <a class="brand" href="#home" aria-label="PRAMA-AI home"><svg width="30" height="30"><use href="#logo"/></svg><span>PRAMA-AI</span><i class="tri" aria-hidden="true"></i></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <nav id="menu" class="menu" aria-label="Primary">
+   <a href="#home">Home</a><a href="#features">Features</a><a href="#how">How It Works</a><a href="#security">Security</a><a href="#about">About</a>
+   <a class="btn btn-cyan" href="#workspace">Launch Workspace</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <h1>PRAMA-AI</h1>
+   <p class="sub">Intelligent Document Verification and Validation Wizard</p>
+   <p class="lead">Transform document verification with intelligent extraction, automated validation, and transparent verification results. Reduce repetitive manual checks while keeping human oversight at the center of every important decision.</p>
+   <div class="cta"><a class="btn btn-cyan" href="#workspace">Start Verification</a><a class="btn btn-ghost" href="#how">Explore How It Works</a></div>
+   <ul class="trust"><li>Intelligent Document Analysis</li><li>Automated Validation Checks</li><li>Human-Reviewed Decisions</li></ul>
+   <p class="tag">Reduce Manual Reliance. Improve Accuracy. Build Trust.</p>
+  </div>
+  <div class="preview" aria-label="Illustrative dashboard preview">
+   <div class="pv-head"><b>AICTE Approval Letter</b><span class="badge amber">Needs Review</span></div>
+   <div class="pv-body">
+    <div class="pv-doc"><div class="line w80"></div><div class="line w60"></div><div class="line w90"></div><div class="line w40"></div><div class="stamp">SAMPLE</div></div>
+    <div>
+     <div class="bar"><span style="width:75%"></span></div><small>Step 3 of 4 · validation</small>
+     <ul class="mini"><li class="ok">Required fields present</li><li class="ok">Approval No. format</li><li class="warn">Institution name mismatch</li></ul>
+    </div>
+   </div>
+   <dl class="pv-fields"><div><dt>Approval No.</dt><dd>F.No. …/EOA</dd></div><div><dt>Valid upto</dt><dd>2027-03-31</dd></div><div><dt>Indicator</dt><dd>0.82 (demo)</dd></div></dl>
+   <p class="ill">Illustrative demo data only.</p>
+  </div>
+ </div>
+ <div class="flagbar" aria-hidden="true"><i></i><i></i><i></i></div>
+</section>
+
+<section class="sec" id="problem"><div class="wrap">
+ <h2>From Manual Checking to Intelligent Verification</h2>
+ <div class="two">
+  <div><h3>Where manual review struggles</h3><ul class="ticks bad"><li>Time-consuming manual inspection</li><li>Inconsistent validation processes</li><li>Missing information and mismatched fields</li><li>Difficulty tracking verification results</li><li>Human errors during repetitive checks</li></ul></div>
+  <div><h3>How PRAMA-AI assists</h3><ul class="ticks good"><li>Structured extraction of key fields</li><li>Rule-based validation checks</li><li>Inconsistency detection across fields</li><li>Organized review results and reports</li></ul><p class="note">PRAMA-AI supports reviewers. It does not guarantee accuracy or remove the need for human judgement.</p></div>
+ </div>
+</div></section>
+
+<section class="sec alt" id="features"><div class="wrap">
+ <h2>Features</h2>
+ <div class="cards">
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v4h16v-4"/></svg><h3>Smart Document Upload</h3><p>Select or drag and drop a PDF, PNG or JPG file.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 10h10M4 15h16M4 20h8"/></svg><h3>Intelligent Data Extraction</h3><p>Demonstrates extraction of approval number, institution, issue and expiry dates from sample documents.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><h3>Automated Validation</h3><p>Checks required fields, date formats, missing values and configurable rules.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M12 3l10 18H2zM12 10v5M12 18v.01"/></svg><h3>Inconsistency Detection</h3><p>Flags mismatched fields, missing values, duplicate IDs in the demo dataset and suspicious formatting.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM9 12h7M9 16h7"/></svg><h3>Verification Report</h3><p>Readable report with passed checks, warnings, failures and next actions.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></svg><h3>Human-in-the-Loop Review</h3><p>Reviewers inspect flagged results and approve, reject or request further review.</p></article>
+ </div>
+</div></section>
+
+<section class="sec" id="how"><div class="wrap">
+ <h2>How It Works</h2>
+ <ol class="flow">
+  <li><b>1</b><h3>Upload Document</h3></li><li><b>2</b><h3>Extract Information</h3></li><li><b>3</b><h3>Run Validation Checks</h3></li><li><b>4</b><h3>Review Results and Generate Report</h3></li>
+ </ol>
+</div></section>
+
+<section class="sec work" id="workspace"><div class="wrap">
+ <h2>Verification Workspace</h2>
+ <p class="demo-note" role="note"><b>Demo Mode:</b> Results are illustrative and do not constitute official document authentication.</p>
+ <ol class="tracker" id="tracker" aria-label="Workflow progress"><li data-s="1" class="active">Upload</li><li data-s="2">Extract</li><li data-s="3">Validate</li><li data-s="4">Review</li></ol>
+ <div class="ws-grid">
+  <div class="panel">
+   <h3>1. Choose a document</h3>
+   <div class="drop" id="drop" tabindex="0" role="button" aria-label="Upload a PDF, PNG or JPG file. Press Enter to browse.">
+    <p><b>Drop a file here</b> or press Enter to browse</p><small>PDF, PNG, JPG · max 5 MB · stays in your browser</small>
+    <input type="file" id="file" accept=".pdf,.png,.jpg,.jpeg,application/pdf,image/png,image/jpeg" hidden>
+   </div>
+   <p class="msg" id="fileMsg" role="alert" aria-live="assertive"></p>
+   <div class="fileinfo" id="fileInfo" hidden><span><b id="fname"></b> <small id="fsize"></small></span><button class="btn btn-ghost sm" id="rmFile">Remove file</button></div>
+   <div class="viewer" id="viewer"></div>
+   <h3>2. Select a demo scenario</h3>
+   <p class="small">Sample AICTE documents (fictional). Uploaded files are checked for type and size only; their content is not analysed.</p>
+   <div class="scen" id="scen" role="group" aria-label="Demo scenario"></div>
+   <div class="sample" id="sample" aria-live="polite"></div>
+   <div class="cta"><button class="btn btn-navy" id="run">Run Verification</button><button class="btn btn-ghost" id="reset">Reset</button></div>
+   <p class="msg" id="runMsg" aria-live="polite"></p>
+  </div>
+  <div class="panel" id="results" aria-live="polite">
+   <h3>3. Results</h3>
+   <p class="empty" id="empty">No results yet. Pick a scenario and select Run Verification.</p>
+   <div id="out" hidden>
+    <div class="status-row"><span class="badge" id="overall"></span><small id="stamp"></small></div>
+    <div class="counts"><div><b id="cTotal">0</b>Total</div><div class="g"><b id="cPass">0</b>Passed</div><div class="a"><b id="cWarn">0</b>Warnings</div><div class="r"><b id="cFail">0</b>Failed</div></div>
+    <p class="note" id="scope">Format validation only. This is not identity verification, source verification or legal authenticity.</p>
+    <h4>Extracted fields</h4><div class="tw"><table><thead><tr><th>Field</th><th>Value</th><th>Status</th></tr></thead><tbody id="fields"></tbody></table></div>
+    <h4>Checks</h4><ul class="checks" id="checks"></ul>
+    <h4>Recommended next actions</h4><ul id="actions"></ul>
+    <h4>Reviewer decision</h4>
+    <div class="cta"><button class="btn btn-ok" data-d="Approved">Approve</button><button class="btn btn-no" data-d="Rejected">Reject</button><button class="btn btn-wait" data-d="Needs further review">Request review</button></div>
+    <p class="msg" id="decision" aria-live="polite">No reviewer decision yet.</p>
+    <button class="btn btn-cyan" id="download">Download report</button>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec alt" id="security"><div class="wrap">
+ <h2>Designed with Privacy and Transparency in Mind</h2>
+ <ul class="ticks good cols"><li>Local file processing in the frontend demo</li><li>No external document uploads by the demo interface</li><li>Clear distinction between validation and authentication</li><li>Transparent verification results</li><li>Human review for important decisions</li></ul>
+ <p class="note">A production deployment would require a secure backend, authentication, access controls, protected storage, and appropriate privacy safeguards. This demo does not connect to any government database or verify digital signatures.</p>
+</div></section>
+
+<section class="sec" id="about"><div class="wrap narrow">
+ <h2>About PRAMA-AI</h2>
+ <p>PRAMA-AI is an intelligent document verification and validation platform concept, developed to reduce repetitive manual effort and make document review more structured, transparent and efficient. It is a technology project designed for practical real-world use, starting here with a demo built around AICTE approval documents.</p>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+ <div class="fgrid"><div><a class="brand" href="#home"><svg width="26" height="26"><use href="#logo"/></svg><span>PRAMA-AI</span></a><p>Reduce Manual Reliance. Improve Accuracy. Build Trust.</p></div>
+ <nav aria-label="Footer"><a href="#features">Features</a><a href="#how">How It Works</a><a href="#security">Security</a></nav></div>
+ <p class="small">Demo Mode: Results are illustrative and do not constitute official document authentication. Sample documents are fictional.</p>
+ <p class="small">© <span id="year"></span> PRAMA-AI</p>
+</div></footer>
+<div class="modal" id="modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle" aria-describedby="mDesc">
+ <span class="badge amber">Demo Mode · simulated processing</span>
+ <h3 id="mTitle"></h3><p class="small" id="mDesc"></p>
+ <div class="bar"><span id="mBar"></span></div>
+ <ul class="mlog" id="mLog" aria-live="polite"></ul>
+ <button class="btn btn-ghost sm" id="mCancel">Cancel analysis</button>
+</div></div>
+<script src="script.js"></script>
+</body>
+</html>
